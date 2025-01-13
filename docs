@@ -1,0 +1,47 @@
+How to Run This Project
+
+	1.	Initialize Terraform:
+Run the following command to initialize the working directory and download the AWS provider:
+
+terraform init
+
+		2.	Validate Configuration:
+Validate your configuration to ensure there are no syntax errors:
+
+terraform validate
+
+	3.	Plan the Deployment:
+Generate and review the execution plan
+
+	terraform plan
+
+	
+	4.	Apply the Configuration:
+Deploy the resources to AWS:
+
+  terraform apply 
+
+
+	Type yes to confirm.
+
+	5.	View Outputs:
+After the deployment, view the outputs with:
+
+	terraform outputs
+
+
+1.	Push to GitHub:
+	•	Create a .gitignore file and add the following to exclude sensitive files:
+
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+•	Push your project to GitHub.
+
+2.	Extend the Project:
+	•	Add an Elastic IP for the instance.
+	•	Attach a volume to the EC2 instance.
+	•	Deploy a load balancer for multiple EC2 instances.
+	
+	
